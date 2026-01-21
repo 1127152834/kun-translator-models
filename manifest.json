@@ -8,7 +8,8 @@
       "files": [
         {
           "name": "silero_vad.onnx",
-          "size": 2000000
+          "size": 2243022,
+          "md5": "d043e870b28caee4c503de5a3e2b8551"
         }
       ],
       "required": true
@@ -20,15 +21,23 @@
       "files": [
         {
           "name": "asr/funasr_zh.onnx",
-          "size": 50000000
+          "size": 10124910,
+          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
         },
         {
           "name": "mt/zh-en.onnx",
-          "size": 30000000
+          "size": 52899742,
+          "md5": "da9feb17bbdb69a326c69cdfff68fa6d"
         },
         {
-          "name": "tts/zh_acoustic.onnx",
-          "size": 20000000
+          "name": "tts/zh/acoustic.onnx",
+          "size": 63201294,
+          "md5": "40cdb7930ff91b81574d5f0489e076ea"
+        },
+        {
+          "name": "tts/zh/vocoder.onnx",
+          "size": 63201294,
+          "md5": "40cdb7930ff91b81574d5f0489e076ea"
         }
       ]
     },
@@ -39,15 +48,23 @@
       "files": [
         {
           "name": "asr/funasr_en.onnx",
-          "size": 50000000
+          "size": 10124910,
+          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
         },
         {
           "name": "mt/en-zh.onnx",
-          "size": 30000000
+          "size": 52899742,
+          "md5": "ac8ff2e853e4205f10aaae5bc6a16de3"
         },
         {
-          "name": "tts/en_acoustic.onnx",
-          "size": 20000000
+          "name": "tts/en/acoustic.onnx",
+          "size": 63104526,
+          "md5": "3c3f6a6ec605f3a59763256d3b2db012"
+        },
+        {
+          "name": "tts/en/vocoder.onnx",
+          "size": 63104526,
+          "md5": "3c3f6a6ec605f3a59763256d3b2db012"
         }
       ]
     },
@@ -58,15 +75,23 @@
       "files": [
         {
           "name": "asr/funasr_th.onnx",
-          "size": 50000000
+          "size": 10124910,
+          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
         },
         {
           "name": "mt/th-en.onnx",
-          "size": 30000000
+          "size": 51520414,
+          "md5": "16eb00c2f647212ac3450eb03e796351"
         },
         {
-          "name": "tts/th_acoustic.onnx",
-          "size": 20000000
+          "name": "tts/th/acoustic.onnx",
+          "size": 63104526,
+          "md5": "3c3f6a6ec605f3a59763256d3b2db012"
+        },
+        {
+          "name": "tts/th/vocoder.onnx",
+          "size": 63104526,
+          "md5": "3c3f6a6ec605f3a59763256d3b2db012"
         }
       ]
     },
@@ -77,15 +102,23 @@
       "files": [
         {
           "name": "asr/funasr_vi.onnx",
-          "size": 50000000
+          "size": 10124910,
+          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
         },
         {
           "name": "mt/vi-en.onnx",
-          "size": 30000000
+          "size": 47133597,
+          "md5": "1d0fcb9922322840e9e4d69d991d0d5e"
         },
         {
-          "name": "tts/vi_acoustic.onnx",
-          "size": 20000000
+          "name": "tts/vi/acoustic.onnx",
+          "size": 63104526,
+          "md5": "54ff8fb35b0084336377ddd10717e1fa"
+        },
+        {
+          "name": "tts/vi/vocoder.onnx",
+          "size": 63104526,
+          "md5": "54ff8fb35b0084336377ddd10717e1fa"
         }
       ]
     },
@@ -96,15 +129,23 @@
       "files": [
         {
           "name": "asr/funasr_ms.onnx",
-          "size": 50000000
+          "size": 10124910,
+          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
         },
         {
           "name": "mt/ms-en.onnx",
-          "size": 30000000
+          "size": 47674782,
+          "md5": "689e9bc50d935430044f8c8bc2d0aaa3"
         },
         {
-          "name": "tts/ms_acoustic.onnx",
-          "size": 20000000
+          "name": "tts/ms/acoustic.onnx",
+          "size": 62950044,
+          "md5": "17de01db7ac654655436b6e509893c72"
+        },
+        {
+          "name": "tts/ms/vocoder.onnx",
+          "size": 62950044,
+          "md5": "17de01db7ac654655436b6e509893c72"
         }
       ]
     },
@@ -115,15 +156,23 @@
       "files": [
         {
           "name": "asr/funasr_id.onnx",
-          "size": 50000000
+          "size": 10124910,
+          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
         },
         {
           "name": "mt/id-en.onnx",
-          "size": 30000000
+          "size": 47674782,
+          "md5": "689e9bc50d935430044f8c8bc2d0aaa3"
         },
         {
-          "name": "tts/id_acoustic.onnx",
-          "size": 20000000
+          "name": "tts/id/acoustic.onnx",
+          "size": 62950044,
+          "md5": "17de01db7ac654655436b6e509893c72"
+        },
+        {
+          "name": "tts/id/vocoder.onnx",
+          "size": 62950044,
+          "md5": "17de01db7ac654655436b6e509893c72"
         }
       ]
     }
