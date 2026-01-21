@@ -1,0 +1,131 @@
+{
+  "version": "1.0.0",
+  "baseUrl": "https://github.com/1127152834/kun-translator-models/releases/download/v1.0.0",
+  "models": {
+    "base": {
+      "id": "base",
+      "label": "基础模型包",
+      "files": [
+        {
+          "name": "silero_vad.onnx",
+          "size": 2000000
+        }
+      ],
+      "required": true
+    },
+    "lang-zh": {
+      "id": "lang-zh",
+      "label": "中文",
+      "languageCode": "zh",
+      "files": [
+        {
+          "name": "asr/funasr_zh.onnx",
+          "size": 50000000
+        },
+        {
+          "name": "mt/zh-en.onnx",
+          "size": 30000000
+        },
+        {
+          "name": "tts/zh_acoustic.onnx",
+          "size": 20000000
+        }
+      ]
+    },
+    "lang-en": {
+      "id": "lang-en",
+      "label": "英文",
+      "languageCode": "en",
+      "files": [
+        {
+          "name": "asr/funasr_en.onnx",
+          "size": 50000000
+        },
+        {
+          "name": "mt/en-zh.onnx",
+          "size": 30000000
+        },
+        {
+          "name": "tts/en_acoustic.onnx",
+          "size": 20000000
+        }
+      ]
+    },
+    "lang-th": {
+      "id": "lang-th",
+      "label": "泰语",
+      "languageCode": "th",
+      "files": [
+        {
+          "name": "asr/funasr_th.onnx",
+          "size": 50000000
+        },
+        {
+          "name": "mt/th-en.onnx",
+          "size": 30000000
+        },
+        {
+          "name": "tts/th_acoustic.onnx",
+          "size": 20000000
+        }
+      ]
+    },
+    "lang-vi": {
+      "id": "lang-vi",
+      "label": "越南语",
+      "languageCode": "vi",
+      "files": [
+        {
+          "name": "asr/funasr_vi.onnx",
+          "size": 50000000
+        },
+        {
+          "name": "mt/vi-en.onnx",
+          "size": 30000000
+        },
+        {
+          "name": "tts/vi_acoustic.onnx",
+          "size": 20000000
+        }
+      ]
+    },
+    "lang-ms": {
+      "id": "lang-ms",
+      "label": "马来语",
+      "languageCode": "ms",
+      "files": [
+        {
+          "name": "asr/funasr_ms.onnx",
+          "size": 50000000
+        },
+        {
+          "name": "mt/ms-en.onnx",
+          "size": 30000000
+        },
+        {
+          "name": "tts/ms_acoustic.onnx",
+          "size": 20000000
+        }
+      ]
+    },
+    "lang-id": {
+      "id": "lang-id",
+      "label": "印尼语",
+      "languageCode": "id",
+      "files": [
+        {
+          "name": "asr/funasr_id.onnx",
+          "size": 50000000
+        },
+        {
+          "name": "mt/id-en.onnx",
+          "size": 30000000
+        },
+        {
+          "name": "tts/id_acoustic.onnx",
+          "size": 20000000
+        }
+      ]
+    }
+  }
+}
