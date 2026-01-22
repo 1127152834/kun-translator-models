@@ -14,167 +14,69 @@
       ],
       "required": true
     },
-    "lang-zh": {
-      "id": "lang-zh",
-      "label": "中文",
-      "languageCode": "zh",
+    "whisper-asr": {
+      "id": "whisper-asr",
+      "label": "Whisper ASR",
       "files": [
         {
-          "name": "funasr_zh.onnx",
-          "size": 10124910,
-          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
+          "name": "Whisper_initializer.onnx",
+          "size": 71378,
+          "md5": "98fa83112f65f88ceda4b1666231984b"
         },
         {
-          "name": "zh-en.onnx",
-          "size": 52899742,
-          "md5": "da9feb17bbdb69a326c69cdfff68fa6d"
+          "name": "Whisper_encoder.onnx",
+          "size": 92487048,
+          "md5": "65ca9f0cd94fa47901677b8c840be1f9"
         },
         {
-          "name": "zh_acoustic.onnx",
-          "size": 63201294,
-          "md5": "40cdb7930ff91b81574d5f0489e076ea"
+          "name": "Whisper_decoder.onnx",
+          "size": 181741988,
+          "md5": "522edf5bfb4bebeb51bdc429401e8007"
         },
         {
-          "name": "zh_vocoder.onnx",
-          "size": 63201294,
-          "md5": "40cdb7930ff91b81574d5f0489e076ea"
+          "name": "Whisper_cache_initializer.onnx",
+          "size": 14315416,
+          "md5": "4f51ccd9e409f54a7588c4de0933a413"
+        },
+        {
+          "name": "Whisper_detokenizer.onnx",
+          "size": 472377,
+          "md5": "9a774f83f716169763ccc673d01a32ed"
         }
-      ]
+      ],
+      "required": true
     },
-    "lang-en": {
-      "id": "lang-en",
-      "label": "英文",
-      "languageCode": "en",
+    "nllb-mt": {
+      "id": "nllb-mt",
+      "label": "NLLB MT",
       "files": [
         {
-          "name": "funasr_en.onnx",
-          "size": 10124910,
-          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
+          "name": "NLLB_encoder.onnx",
+          "size": 266487014,
+          "md5": "eed17a3dce2100b59dda162781331452"
         },
         {
-          "name": "en-zh.onnx",
-          "size": 52899742,
-          "md5": "ac8ff2e853e4205f10aaae5bc6a16de3"
+          "name": "NLLB_decoder.onnx",
+          "size": 179109694,
+          "md5": "ed4c125e6ca7d17e533d6e747e0844ed"
         },
         {
-          "name": "en_acoustic.onnx",
-          "size": 63104526,
-          "md5": "3c3f6a6ec605f3a59763256d3b2db012"
+          "name": "NLLB_embed_and_lm_head.onnx",
+          "size": 524712277,
+          "md5": "9025f9d9438ea5a80508351c81d53737"
         },
         {
-          "name": "en_vocoder.onnx",
-          "size": 63104526,
-          "md5": "3c3f6a6ec605f3a59763256d3b2db012"
+          "name": "NLLB_cache_initializer.onnx",
+          "size": 25368443,
+          "md5": "618af7b95feeea5123f05cb210729e2e"
+        },
+        {
+          "name": "sentencepiece_bpe.model",
+          "size": 4852054,
+          "md5": "05c551ae7955b3980d5a9d044eb09d70"
         }
-      ]
-    },
-    "lang-th": {
-      "id": "lang-th",
-      "label": "泰语",
-      "languageCode": "th",
-      "files": [
-        {
-          "name": "funasr_th.onnx",
-          "size": 10124910,
-          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
-        },
-        {
-          "name": "th-en.onnx",
-          "size": 51520414,
-          "md5": "16eb00c2f647212ac3450eb03e796351"
-        },
-        {
-          "name": "th_acoustic.onnx",
-          "size": 63104526,
-          "md5": "3c3f6a6ec605f3a59763256d3b2db012"
-        },
-        {
-          "name": "th_vocoder.onnx",
-          "size": 63104526,
-          "md5": "3c3f6a6ec605f3a59763256d3b2db012"
-        }
-      ]
-    },
-    "lang-vi": {
-      "id": "lang-vi",
-      "label": "越南语",
-      "languageCode": "vi",
-      "files": [
-        {
-          "name": "funasr_vi.onnx",
-          "size": 10124910,
-          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
-        },
-        {
-          "name": "vi-en.onnx",
-          "size": 47133597,
-          "md5": "1d0fcb9922322840e9e4d69d991d0d5e"
-        },
-        {
-          "name": "vi_acoustic.onnx",
-          "size": 63104526,
-          "md5": "54ff8fb35b0084336377ddd10717e1fa"
-        },
-        {
-          "name": "vi_vocoder.onnx",
-          "size": 63104526,
-          "md5": "54ff8fb35b0084336377ddd10717e1fa"
-        }
-      ]
-    },
-    "lang-ms": {
-      "id": "lang-ms",
-      "label": "马来语",
-      "languageCode": "ms",
-      "files": [
-        {
-          "name": "funasr_ms.onnx",
-          "size": 10124910,
-          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
-        },
-        {
-          "name": "ms-en.onnx",
-          "size": 47674782,
-          "md5": "689e9bc50d935430044f8c8bc2d0aaa3"
-        },
-        {
-          "name": "ms_acoustic.onnx",
-          "size": 62950044,
-          "md5": "17de01db7ac654655436b6e509893c72"
-        },
-        {
-          "name": "ms_vocoder.onnx",
-          "size": 62950044,
-          "md5": "17de01db7ac654655436b6e509893c72"
-        }
-      ]
-    },
-    "lang-id": {
-      "id": "lang-id",
-      "label": "印尼语",
-      "languageCode": "id",
-      "files": [
-        {
-          "name": "funasr_id.onnx",
-          "size": 10124910,
-          "md5": "9314f3e4e4a59453dcdd9336c5bc4170"
-        },
-        {
-          "name": "id-en.onnx",
-          "size": 47674782,
-          "md5": "689e9bc50d935430044f8c8bc2d0aaa3"
-        },
-        {
-          "name": "id_acoustic.onnx",
-          "size": 62950044,
-          "md5": "17de01db7ac654655436b6e509893c72"
-        },
-        {
-          "name": "id_vocoder.onnx",
-          "size": 62950044,
-          "md5": "17de01db7ac654655436b6e509893c72"
-        }
-      ]
+      ],
+      "required": true
     }
   }
 }
