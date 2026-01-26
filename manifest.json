@@ -1,82 +1,182 @@
 {
-  "version": "1.0.0",
-  "baseUrl": "https://github.com/1127152834/kun-translator-models/releases/download/v1.0.0",
+  "version": "v2.0.1",
+  "baseUrl": "https://github.com/1127152834/kun-translator-models/releases/download/v2.0.1",
   "models": {
     "base": {
       "id": "base",
       "label": "基础模型包",
       "files": [
         {
-          "name": "silero_vad.onnx",
+          "name": "basic/vad_silero.onnx",
+          "remoteName": "basic__vad_silero.onnx",
           "size": 2243022,
           "md5": "d043e870b28caee4c503de5a3e2b8551"
+        },
+        {
+          "name": "basic/ecapa_voiceprint.onnx",
+          "remoteName": "basic__ecapa_voiceprint.onnx",
+          "size": 84139323,
+          "md5": "53402bb4b451824a566fb303f81151da"
         }
       ],
-      "required": true
+      "required": true,
+      "totalSize": 86382345
     },
-    "whisper-asr": {
-      "id": "whisper-asr",
-      "label": "Whisper ASR",
+    "sensevoice-asr": {
+      "id": "sensevoice-asr",
+      "label": "SenseVoice ASR",
       "files": [
         {
-          "name": "Whisper_initializer.onnx",
-          "size": 71378,
-          "md5": "98fa83112f65f88ceda4b1666231984b"
+          "name": "asr/sense-voice-encoder.onnx",
+          "remoteName": "asr__sense-voice-encoder.onnx",
+          "size": 239233841,
+          "md5": "0e8e550411d3589be9f0af06f1c8fec3"
         },
         {
-          "name": "Whisper_encoder.onnx",
-          "size": 92487048,
-          "md5": "65ca9f0cd94fa47901677b8c840be1f9"
+          "name": "asr/tokens.txt",
+          "remoteName": "asr__tokens.txt",
+          "size": 315894,
+          "md5": "17cdd9d527315e28553153706d23c719"
         },
         {
-          "name": "Whisper_decoder.onnx",
-          "size": 181741988,
-          "md5": "522edf5bfb4bebeb51bdc429401e8007"
-        },
-        {
-          "name": "Whisper_cache_initializer.onnx",
-          "size": 14315416,
-          "md5": "4f51ccd9e409f54a7588c4de0933a413"
-        },
-        {
-          "name": "Whisper_detokenizer.onnx",
-          "size": 472377,
-          "md5": "9a774f83f716169763ccc673d01a32ed"
+          "name": "asr/tokenizer.json",
+          "remoteName": "asr__tokenizer.json",
+          "size": 391073,
+          "md5": "4cd17943eff8608536b8f0d51ab4383f"
         }
       ],
-      "required": true
+      "required": true,
+      "totalSize": 239940808
     },
-    "nllb-mt": {
-      "id": "nllb-mt",
-      "label": "NLLB MT",
+    "hymt": {
+      "id": "hymt",
+      "label": "HY-MT 翻译模型",
       "files": [
         {
-          "name": "NLLB_encoder.onnx",
-          "size": 266487014,
-          "md5": "eed17a3dce2100b59dda162781331452"
+          "name": "mt/mt_hymt_model_q4.onnx",
+          "remoteName": "mt__mt_hymt_model_q4.onnx",
+          "size": 448829,
+          "md5": "1eb2f33f07e55e346dfa6d3d183ff94c"
         },
         {
-          "name": "NLLB_decoder.onnx",
-          "size": 179109694,
-          "md5": "ed4c125e6ca7d17e533d6e747e0844ed"
+          "name": "mt/mt_hymt_model_q4.onnx_data",
+          "remoteName": "mt__mt_hymt_model_q4.onnx_data",
+          "size": 1405788224,
+          "md5": "3535dd010f0e51a590f2995e7e12a827"
         },
         {
-          "name": "NLLB_embed_and_lm_head.onnx",
-          "size": 524712277,
-          "md5": "9025f9d9438ea5a80508351c81d53737"
+          "name": "mt/mt_hymt_tokenizer.json",
+          "remoteName": "mt__mt_hymt_tokenizer.json",
+          "size": 8672322,
+          "md5": "5c1d392cddf2bcf74805df35a75c366b"
         },
         {
-          "name": "NLLB_cache_initializer.onnx",
-          "size": 25368443,
-          "md5": "618af7b95feeea5123f05cb210729e2e"
-        },
-        {
-          "name": "sentencepiece_bpe.model",
-          "size": 4852054,
-          "md5": "05c551ae7955b3980d5a9d044eb09d70"
+          "name": "mt/mt_hymt_config.json",
+          "remoteName": "mt__mt_hymt_config.json",
+          "size": 1639,
+          "md5": "d3c8f618b06b58961c61985e4f4177e0"
         }
       ],
-      "required": true
+      "required": true,
+      "totalSize": 1414911014
+    },
+    "tts": {
+      "id": "tts",
+      "label": "CosyVoice 语音合成",
+      "files": [
+        {
+          "name": "tts/cosyvoice2-0.5b/tokenizer.json",
+          "remoteName": "tts__cosyvoice2-0.5b__tokenizer.json",
+          "size": 4887384,
+          "md5": "b7b43d33471555d9be7120c0c5392369"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/text_embedding_fp32.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__text_embedding_fp32.onnx",
+          "size": 544538870,
+          "md5": "339b8a17314a86337ac6b38cbb512f50"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/campplus.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__campplus.onnx",
+          "size": 28303423,
+          "md5": "519666b22ca5f322bcf80e18c45f47a1"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/speech_tokenizer_v3.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__speech_tokenizer_v3.onnx",
+          "size": 969451503,
+          "md5": "703dc013a120efa3c1e9732195bd2393"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/llm_backbone_initial_fp16.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__llm_backbone_initial_fp16.onnx",
+          "size": 716774004,
+          "md5": "28d0a3945427870d46b064694f91f931"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/llm_backbone_decode_fp16.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__llm_backbone_decode_fp16.onnx",
+          "size": 717252905,
+          "md5": "aea10fb277bf9549b8a6a15c4385288f"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/llm_decoder_fp16.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__llm_decoder_fp16.onnx",
+          "size": 12116511,
+          "md5": "d868123a0d22b152004674c4441c92fa"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/llm_speech_embedding_fp16.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__llm_speech_embedding_fp16.onnx",
+          "size": 12116180,
+          "md5": "1b1e37c450d590d3a98c56dffe8d6d77"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/flow_token_embedding_fp16.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__flow_token_embedding_fp16.onnx",
+          "size": 1050554,
+          "md5": "b8875a7318da14b1f31ea804f5b9dd17"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/flow_speaker_projection_fp16.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__flow_speaker_projection_fp16.onnx",
+          "size": 31710,
+          "md5": "f6e4eac5346a9869cc028a11a0a6034c"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/flow_pre_lookahead_fp16.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__flow_pre_lookahead_fp16.onnx",
+          "size": 1160571,
+          "md5": "c5b87d6018e1288a564312b55616e2da"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/flow.decoder.estimator.fp16.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__flow.decoder.estimator.fp16.onnx",
+          "size": 664306890,
+          "md5": "b9ed6177a97468ea4cd2daf03f1cbe24"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/hift_f0_predictor_fp32.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__hift_f0_predictor_fp32.onnx",
+          "size": 13264386,
+          "md5": "48d2699c4a7fbddb48182b765c352d71"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/hift_source_generator_fp32.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__hift_source_generator_fp32.onnx",
+          "size": 259217882,
+          "md5": "4185b1867a38330029057704d81b43ff"
+        },
+        {
+          "name": "tts/cosyvoice2-0.5b/onnx/hift_decoder_fp32.onnx",
+          "remoteName": "tts__cosyvoice2-0.5b__onnx__hift_decoder_fp32.onnx",
+          "size": 70163545,
+          "md5": "accb4059c252280f2ef2a07e3c943c37"
+        }
+      ],
+      "required": false,
+      "totalSize": 4014636318
     }
   }
 }
